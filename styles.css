@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: rgb(189,7,7);
+background: linear-gradient(1deg, rgba(189,7,7,1) 0%, rgba(196,108,56,1) 56%, rgba(142,65,172,1) 100%);
+}
+
+.container {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+    background: #ffffff7d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 4px 0px 0px rgb(44 40 40 / 43%);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="time"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pattern {
+    display: flex;
+    flex-flow: wrap;
+    padding: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 15vw; /* Imposta la larghezza come 15% della larghezza della viewport */
+    height: 15vw; /* Imposta l'altezza uguale alla larghezza per creare un pulsante quadrato */
+    background-color: #007bff; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuove il bordo */
+    border-radius: 10%; /* Aggiunge una leggera arrotondatura ai bordi */
+    font-size: 3vw; /* Dimensione del testo in relazione alla larghezza della viewport */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+    display: flex; /* Usato per centrare il testo */
+    align-items: center; /* Allinea verticalmente il testo */
+    justify-content: center; /* Allinea orizzontalmente il testo */
+    margin: 10px; /* Spazio intorno al pulsante */
+}
+
+button:hover {
+    background-color: #0056b3; /* Colore di sfondo al passaggio */
+}
+
+#daily-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#daily-list li {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#monthly-total {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.reset-button {
+    margin-bottom: -80px;
+    background-color: #dc3545;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+.delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+#daily-list li {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Allinea gli elementi a sinistra e a destra */
+    align-items: center; /* Centra verticalmente */
+}
+
+.previous-month-button {
+    margin-top: 10px;
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous-month-button:hover {
+    background-color: #138496;
+}
+
+.new-month-button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-month-button:hover {
+    background-color: #218838;
+}
+
+.current-month-button {
+    margin-top: 10px;
+    background-color: #8112aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.current-month-button:hover {
+    background-color: #670d88;
+}
+
+.pattern {
+    display: flex;
+    flex-flow: wrap;
+    padding: inherit;
+}

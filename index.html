@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Orari di Lavoro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro Orari di Lavoro</h1>
+        <div class="form-group">
+            <label for="start-time">Ora di Inizio:</label>
+            <input type="time" id="start-time">
+        </div>
+        <div class="form-group">
+            <label for="end-time">Ora di Fine:</label>
+            <input type="time" id="end-time">
+        </div>
+        <div class="form-group">
+            <label for="break-time">Durata della Pausa (minuti):</label>
+            <input type="number" id="break-time" min="0" placeholder="Es. 30">
+        </div>
+        <div class="pattern">
+            <button onclick="registerShift()">Registra Turno</button>
+            <button onclick="resetMonth()" class="reset-button">Reset</button>
+            <button onclick="newMonth()" class="new-month-button">Nuovo Mese</button>
+            <button onclick="showPreviousMonth()" class="previous-month-button">Mese Scorso</button>
+            <button onclick="showCurrentMonth()" class="current-month-button">Mese Corrente</button> <!-- Nuovo bottone Mese Corrente -->
+        </div>    
+        <h2>Ore Giornaliere</h2>
+        <ul id="daily-list"></ul>
+    
+        <h2>Ore Totali Mensili</h2>
+        <p id="monthly-total">0 ore</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
